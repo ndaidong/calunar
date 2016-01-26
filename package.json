@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0",
+  "name": "lunar-convertor",
+  "description": "Util for calculating lunar date based on Ho Ngoc Duc implementation",
+  "homepage": "http://techpush.net",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:techpush/yearly-calendar.git"
+  },
+  "author": "Dong Nguyen <ndaidong@gmail.com> (https://twitter.com/ndaidong)",
+  "main": "./index.js",
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "traceur": "latest",
+    "mocha": "latest",
+    "chai": "latest"
+  },
+  "keywords": [
+    "calendar",
+    "date",
+    "calculator",
+    "util"
+  ],
+  "license": "GNU General Public License",
+  "maintainers": [
+    "ndaidong <ndaidong@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/techpush/yearly-calendar/issues"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
