@@ -1,6 +1,6 @@
 /**
  * LunarConverter
- * Util for calculating lunar date based on Ho Ngoc Duc implementation
+ * Util for calculating lunar date based on the implementation by Ho Ngoc Duc.
  * Refer: http://www.informatik.uni-leipzig.de/~duc/amlich/
  * @ndaidong
  **/
