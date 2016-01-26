@@ -1,8 +1,8 @@
 # yearly-calendar
 
-Calculate  average and scoring based on Wilson Score Equation
+Util for calculating lunar date based on Ho Ngoc Duc implementation.
 
-[![NPM](https://badge.fury.io/js/yearly-calendar.svg)](https://badge.fury.io/js/yearly-calendar) ![Travis](https://travis-ci.org/ndaidong/yearly-calendar.svg?branch=master)
+Refer: http://www.informatik.uni-leipzig.de/~duc/amlich/
 
 ## Usage
 
