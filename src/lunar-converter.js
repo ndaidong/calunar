@@ -5,7 +5,7 @@
  * @ndaidong
  **/
 
-(function init(context) {
+(function init(context, dependencies) {
 
   'use strict';
 
@@ -220,24 +220,19 @@
   }
 
   var LunarConverter = {
-    ENV: 'browser',
     jdFromDate: jdFromDate,
     jdToDate: jdToDate,
     solar2Lunar: convertSolar2Lunar,
     lunar2Solar: convertLunar2Solar
   };
 
-  if (typeof module !== 'undefined' && module.exports) {
-    LunarConverter.ENV = 'node';
-  }
-
   // exports
-  if (LunarConverter.ENV === 'node') {
+  if (typeof module !== 'undefined' && module.exports) {
     module.exports = LunarConverter;
   } else {
     var root = context || window;
     if (root.define && root.define.amd) {
-      root.define(function getConverter() {
+      root.define(dependencies || [], function getConverter() {
         return LunarConverter;
       });
     }
