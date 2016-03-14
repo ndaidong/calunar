@@ -5,7 +5,7 @@
   "homepage": "http://techpush.net",
   "repository": {
     "type": "git",
-    "url": "git@github.com:techpush/yearly-calendar.git"
+    "url": "git@github.com:techpush/calunar.git"
   },
   "author": "Dong Nguyen <ndaidong@gmail.com> (https://twitter.com/ndaidong)",
   "main": "./index.js",
@@ -22,10 +22,11 @@
   },
   "keywords": [
     "calendar",
+    "lunar calendar",
+    "lunisolar calendar",
     "date",
     "calculator",
-    "lunar calendar",
-    "chiness calendar",
+    "convertor",
     "util"
   ],
   "license": "The MIT License (MIT)",
@@ -33,7 +34,7 @@
     "ndaidong <ndaidong@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/techpush/yearly-calendar/issues"
+    "url": "https://github.com/techpush/calunar/issues"
   },
   "directories": {
     "test": "test"
