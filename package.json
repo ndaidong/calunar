@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
-  "name": "lunar-convertor",
-  "description": "Util for calculating lunar date based on Ho Ngoc Duc implementation",
+  "name": "calunar",
+  "description": "Calunar: util for calculating lunar date",
   "homepage": "http://techpush.net",
   "repository": {
     "type": "git",

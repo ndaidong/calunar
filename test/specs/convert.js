@@ -15,7 +15,7 @@ var expect = chai.expect;
 
 var rootDir = '../../src/';
 
-var LunarConvertor = require(path.join(rootDir, 'lunar-converter'));
+var LunarConvertor = require(path.join(rootDir, 'calunar'));
 
 describe('.solar2Lunar(dd, mm, yy, timeZone)', () => {
 

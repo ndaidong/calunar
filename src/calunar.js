@@ -1,5 +1,5 @@
 /**
- * LunarConverter
+ * Calunar: lunar date convertor
  * Util for calculating lunar date based on the implementation by Ho Ngoc Duc.
  * Refer: http://www.informatik.uni-leipzig.de/~duc/amlich/
  * @ndaidong
@@ -219,7 +219,7 @@
     return jdToDate(monthStart + lunarDay - 1);
   }
 
-  var LunarConverter = {
+  var Calunar = {
     jdFromDate: jdFromDate,
     jdToDate: jdToDate,
     solar2Lunar: convertSolar2Lunar,
@@ -228,14 +228,14 @@
 
   // exports
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = LunarConverter;
+    module.exports = Calunar;
   } else {
     var root = context || window;
     if (root.define && root.define.amd) {
       root.define(dependencies || [], function getConverter() {
-        return LunarConverter;
+        return Calunar;
       });
     }
-    root.LunarConverter = LunarConverter;
+    root.Calunar = Calunar;
   }
 })();
