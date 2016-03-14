@@ -1,7 +1,7 @@
 # calunar
 Util for calculating lunar date.
 
-[![NPM](https://badge.fury.io/js/article-parser.svg)](https://badge.fury.io/js/article-parser) ![Travis](https://travis-ci.org/ndaidong/article-parser.svg?branch=master)
+[![NPM](https://badge.fury.io/js/calunar.svg)](https://badge.fury.io/js/calunar) ![Travis](https://travis-ci.org/techpush/calunar.svg?branch=master)
 
 ### Installation
 
@@ -10,7 +10,7 @@ npm install calunar
 ```
 
 ### Usage
-
+https://travis-ci.org/techpush/calunar.svg?branch=master
 ```
 import Calunar from 'calunar';
 
