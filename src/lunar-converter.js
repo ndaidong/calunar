@@ -49,7 +49,7 @@
     day = e - INT((153 * m + 2) / 5) + 1;
     month = m + 3 - 12 * INT(m / 10);
     year = b * 100 + d - 4800 + INT(m / 10);
-    return [day, month, year];
+    return [ day, month, year ];
   }
 
   /* Compute the time of the k-th new moon after the new moon of 1/1/1900 13:52 UCT
@@ -185,7 +185,7 @@
     if (lunarMonth >= 11 && diff < 4) {
       lunarYear -= 1;
     }
-    return [lunarDay, lunarMonth, lunarYear, lunarLeap];
+    return [ lunarDay, lunarMonth, lunarYear, lunarLeap ];
   }
 
   /* Convert a lunar date to the corresponding solar date */
@@ -210,7 +210,7 @@
         leapMonth += 12;
       }
       if (lunarLeap !== 0 && lunarMonth !== leapMonth) {
-        return [0, 0, 0];
+        return [ 0, 0, 0 ];
       } else if (lunarLeap !== 0 || off >= leapOff) {
         off += 1;
       }

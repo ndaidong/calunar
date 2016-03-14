@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "name": "lunar-convertor",
   "description": "Util for calculating lunar date based on Ho Ngoc Duc implementation",
   "homepage": "http://techpush.net",

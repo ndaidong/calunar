@@ -69,9 +69,9 @@ describe('.solar2Lunar(dd, mm, yy, timeZone)', () => {
     let ddr = Number(result[0]);
     let mmr = Number(result[1]);
     let yyr = Number(result[2]);
-    let sd = [dd, mm, yy].join('/');
-    let ld = [dde, mme, yye].join('/');
-    let ad = [ddr, mmr, yyr].join('/');
+    let sd = [ dd, mm, yy ].join('/');
+    let ld = [ dde, mme, yye ].join('/');
+    let ad = [ ddr, mmr, yyr ].join('/');
     it(`${sd} solar => ${ld} lunar`, (done) => {
       expect(ad).to.equal(ld);
       done();
