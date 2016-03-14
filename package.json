@@ -1,7 +1,7 @@
 {
   "version": "0.1.1",
   "name": "calunar",
-  "description": "Calunar: util for calculating lunar date",
+  "description": "Calunar: util for handling lunar date",
   "homepage": "http://techpush.net",
   "repository": {
     "type": "git",
@@ -24,9 +24,11 @@
     "calendar",
     "date",
     "calculator",
+    "lunar calendar",
+    "chiness calendar",
     "util"
   ],
-  "license": "GNU General Public License",
+  "license": "The MIT License (MIT)",
   "maintainers": [
     "ndaidong <ndaidong@gmail.com>"
   ],
