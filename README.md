@@ -10,7 +10,7 @@ npm install calunar
 ```
 
 ### Usage
-https://travis-ci.org/techpush/calunar.svg?branch=master
+
 ```
 import Calunar from 'calunar';
 
