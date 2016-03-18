@@ -53,7 +53,7 @@ Calunar.jdToDate(2383164); // return [12, 10, 1812]
 
 ```
 npm install
-mocha
+npm test
 ```
 
 
