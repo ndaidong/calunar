@@ -1,7 +1,9 @@
 # calunar
 Util for calculating lunar date.
 
-[![NPM](https://badge.fury.io/js/calunar.svg)](https://badge.fury.io/js/calunar) ![Travis](https://travis-ci.org/techpush/calunar.svg?branch=master)
+[![NPM](https://badge.fury.io/js/calunar.svg)](https://badge.fury.io/js/calunar)
+![Travis](https://travis-ci.org/techpush/calunar.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/techpush/calunar/badge.svg?branch=master)](https://coveralls.io/github/techpush/calunar?branch=master)
 
 ### Installation
 
