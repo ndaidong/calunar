@@ -1,5 +1,5 @@
 {
-  "version": "0.1.21",
+  "version": "0.1.22",
   "name": "calunar",
   "description": "Calunar: util for handling lunar date",
   "homepage": "http://techpush.net",
@@ -13,12 +13,16 @@
     "node": ">= 4.0"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/nyc mocha",
+    "report": "npm run coverage && ./node_modules/.bin/nyc report --reporter=lcov",
+    "coveralls": "npm run report && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "devDependencies": {
-    "traceur": "latest",
+    "chai": "latest",
+    "coveralls": "latest",
     "mocha": "latest",
-    "chai": "latest"
+    "nyc": "latest"
   },
   "keywords": [
     "calendar",

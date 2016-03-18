@@ -54,8 +54,6 @@ npm install
 mocha
 ```
 
- _* Ensure that you have [mocha](https://mochajs.org/) installed_
-
 
 # License
 

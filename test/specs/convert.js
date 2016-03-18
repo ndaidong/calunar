@@ -7,8 +7,10 @@
 /* eslint no-array-constructor: 0*/
 /* eslint no-new-func: 0*/
 
-import path from 'path';
-import chai from 'chai';
+'use strict';
+
+var chai = require('chai');
+var path = require('path');
 
 chai.should();
 var expect = chai.expect;
@@ -74,6 +76,28 @@ describe('.solar2Lunar(dd, mm, yy, timeZone)', () => {
     let ad = [ ddr, mmr, yyr ].join('/');
     it(`${sd} solar => ${ld} lunar`, (done) => {
       expect(ad).to.equal(ld);
+      done();
+    });
+  });
+
+  samples.forEach((item) => {
+    let solar = item.solar.split('/');
+    let lunar = item.lunar.split('/');
+    let dd = Number(solar[0]);
+    let mm = Number(solar[1]);
+    let yy = Number(solar[2]);
+    let dde = Number(lunar[0]);
+    let mme = Number(lunar[1]);
+    let yye = Number(lunar[2]);
+    let result = LunarConvertor.lunar2Solar(dde, mme, yye, 0, TIMEZONE);
+    let ddr = Number(result[0]);
+    let mmr = Number(result[1]);
+    let yyr = Number(result[2]);
+    let sd = [ dd, mm, yy ].join('/');
+    let ld = [ dde, mme, yye ].join('/');
+    let ad = [ ddr, mmr, yyr ].join('/');
+    it(`${ld} lunar => ${sd} solar`, (done) => {
+      expect(ad).to.equal(sd);
       done();
     });
   });
