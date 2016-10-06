@@ -2,24 +2,12 @@
  * Testing
  * @ndaidong
  */
-/* global describe it */
-/* eslint no-undefined: 0*/
-/* eslint no-array-constructor: 0*/
-/* eslint no-new-func: 0*/
 
-'use strict';
+var test = require('tape');
 
-var chai = require('chai');
-var path = require('path');
+var LunarConvertor = require('../../src/calunar');
 
-chai.should();
-var expect = chai.expect;
-
-var rootDir = '../../src/';
-
-var LunarConvertor = require(path.join(rootDir, 'calunar'));
-
-describe('.solar2Lunar(dd, mm, yy, timeZone)', () => {
+test('.solar2Lunar(dd, mm, yy, timeZone)', (assert) => {
 
   let samples = [
     {
@@ -71,13 +59,11 @@ describe('.solar2Lunar(dd, mm, yy, timeZone)', () => {
     let ddr = Number(result[0]);
     let mmr = Number(result[1]);
     let yyr = Number(result[2]);
-    let sd = [ dd, mm, yy ].join('/');
-    let ld = [ dde, mme, yye ].join('/');
-    let ad = [ ddr, mmr, yyr ].join('/');
-    it(`${sd} solar => ${ld} lunar`, (done) => {
-      expect(ad).to.equal(ld);
-      done();
-    });
+    let sd = [dd, mm, yy].join('/');
+    let ld = [dde, mme, yye].join('/');
+    let ad = [ddr, mmr, yyr].join('/');
+    assert.equals(ad, ld, `${sd} solar => ${ld} lunar`);
+    assert.end();
   });
 
   samples.forEach((item) => {
@@ -93,12 +79,10 @@ describe('.solar2Lunar(dd, mm, yy, timeZone)', () => {
     let ddr = Number(result[0]);
     let mmr = Number(result[1]);
     let yyr = Number(result[2]);
-    let sd = [ dd, mm, yy ].join('/');
-    let ld = [ dde, mme, yye ].join('/');
-    let ad = [ ddr, mmr, yyr ].join('/');
-    it(`${ld} lunar => ${sd} solar`, (done) => {
-      expect(ad).to.equal(sd);
-      done();
-    });
+    let sd = [dd, mm, yy].join('/');
+    let ld = [dde, mme, yye].join('/');
+    let ad = [ddr, mmr, yyr].join('/');
+    assert.equals(ad, ld, `${sd} solar => ${ld} lunar`);
+    assert.end();
   });
 });

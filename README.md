@@ -2,7 +2,7 @@
 Util for calculating lunar date.
 
 [![NPM](https://badge.fury.io/js/calunar.svg)](https://badge.fury.io/js/calunar)
-![Travis](https://travis-ci.org/techpush/calunar.svg?branch=master)
+[![Build Status](https://travis-ci.org/ndaidong/calunar.svg?branch=master)](https://travis-ci.org/ndaidong/calunar)
 [![Coverage Status](https://coveralls.io/repos/github/techpush/calunar/badge.svg?branch=master)](https://coveralls.io/github/techpush/calunar?branch=master)
 
 ### Installation
